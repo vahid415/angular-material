@@ -1,0 +1,8 @@
+<div>
+  <h4>
+    {{this.title}}
+  </h4>
+  <cdk-virtual-scroll-viewport itemSize="20">
+    <div  style="background-color: red;" *cdkVirtualFor="let n of scrollItems">Item {{n}}</div>
+  </cdk-virtual-scroll-viewport>
+</div>

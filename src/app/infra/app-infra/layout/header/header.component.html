@@ -1,0 +1,14 @@
+<div class="mcb-brand">
+  <div style="float: right; width: 45%;">
+    <img style="width: 32px;cursor: pointer;" src="assets/img/menu.svg" alt="menu" (click)="toggleSidebar()" />
+    <img style="width: 70px; cursor: pointer;" src="assets/img/maskan.png" alt="pic"
+         (click)="goToHome()" />
+  </div>
+  <div class="text-center mt-2" style="float: left; width: 55%;">
+    <h6>{{'app'}}</h6>
+    <p style="margin-bottom: 0;">{{'test'}}</p>
+  </div>
+</div>
+<div class="mcb-page-header {{showSidebarClass}}">
+  <app-user-status></app-user-status>
+</div>

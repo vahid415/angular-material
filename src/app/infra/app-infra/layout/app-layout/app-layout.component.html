@@ -1,0 +1,14 @@
+<nb-layout>
+  <nb-layout-header fixed>
+    <app-header></app-header>
+  </nb-layout-header>
+  <nb-sidebar class="menu-sidebar" tag="menu-sidebar" responsive>
+    <app-sidebar></app-sidebar>
+  </nb-sidebar>
+  <nb-layout-column class="mcb-page-content-wrapper">
+    <ng-content></ng-content>
+  </nb-layout-column>
+  <nb-layout-footer fixed>
+    <app-footer style="width: 100%;"></app-footer>
+  </nb-layout-footer>
+</nb-layout>

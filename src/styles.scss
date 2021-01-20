@@ -1,0 +1,10 @@
+@import '~@nebular/theme/styles/globals';
+
+@import 'assets/scss/themes.scss';
+@import 'assets/scss/nebular-theme.scss';
+@import 'assets/scss/layout.css';
+
+
+@include nb-install() {
+  @include nb-theme-global();
+}
