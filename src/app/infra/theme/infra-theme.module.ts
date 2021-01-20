@@ -41,10 +41,10 @@ const NB_THEME_PROVIDERS = [
     NB_MODULES,
   ]
 })
-export class ThemeModule {
+export class InfraThemeModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: ThemeModule,
+      ngModule: InfraThemeModule,
       providers: [ ...NB_THEME_PROVIDERS ]
     };
   }

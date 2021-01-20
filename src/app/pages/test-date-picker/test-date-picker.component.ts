@@ -1,3 +1,4 @@
+import { TranslateService } from '@ngx-translate/core';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 
@@ -8,10 +9,13 @@ import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
 })
 export class TestDatePickerComponent implements OnInit {
   form: FormGroup;
+  selectedValue
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+    public translate: TranslateService) {
     this.form = fb.group({
-      date: new FormControl('', [Validators.required])
+      date: new FormControl('', [ Validators.required ]),
+      lang: new FormControl('', [ Validators.required ])
     });
   }
 

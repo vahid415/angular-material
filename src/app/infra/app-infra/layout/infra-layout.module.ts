@@ -1,17 +1,19 @@
-import { NbMenuService, NbSidebarService, NbSidebarModule, NbMenuModule } from '@nebular/theme';
+import { InfraComponentModule } from './../components/infra-component.module';
+import { TranslateModule } from '@ngx-translate/core';
+import { InfraCommonModule } from '../common/infra-common.module';
+import { NbSidebarModule, NbMenuModule } from '@nebular/theme';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 
-import { ThemeModule } from './../../theme/theme.module';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { UserStatusComponent } from './user-status/user-status.component';
+import { InfraThemeModule } from '../../theme/infra-theme.module';
+import { MaterialComponentModule } from '../../material/material.module';
 
 @NgModule({
-  imports: [ CommonModule, RouterModule, ThemeModule.forRoot(),
+  imports: [ InfraThemeModule.forRoot(), TranslateModule, InfraComponentModule,MaterialComponentModule
   ],
   exports: [
     AppLayoutComponent,
@@ -26,8 +28,6 @@ import { UserStatusComponent } from './user-status/user-status.component';
   providers: [
     NbSidebarModule,
     NbMenuModule
-    // ...NbSidebarModule.forRoot().providers,
-    // ...NbMenuModule.forRoot().providers,
   ]
 })
-export class LayoutModule { }
+export class InfraLayoutModule { }

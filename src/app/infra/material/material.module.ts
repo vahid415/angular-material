@@ -27,7 +27,8 @@ import { MaterialPersianDateAdapter, PERSIAN_DATE_FORMATS } from '../app-infra/c
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatSliderModule
+    MatSliderModule,
+    MatSelectModule
   ],
   providers: [
     { provide: DateAdapter, useClass: MaterialPersianDateAdapter, deps: [MAT_DATE_LOCALE] },

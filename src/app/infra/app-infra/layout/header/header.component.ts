@@ -1,7 +1,9 @@
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NbSidebarService } from '@nebular/theme';
 import { LayoutService } from '../../common/services/layout.service';
 import { NavigationService } from '../../common/services/navigation.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +11,23 @@ import { NavigationService } from '../../common/services/navigation.service';
   styleUrls: [ './header.component.css' ]
 })
 export class HeaderComponent implements OnInit {
+  form: FormGroup;
+  selectedValue: string;
   @Output() toggleProfile: EventEmitter<any> = new EventEmitter();
   public showSidebarClass = '';
   constructor(private layoutService: LayoutService,
     private sidebarService: NbSidebarService,
-    private navigate: NavigationService
+    private navigate: NavigationService,
+    public translate: TranslateService, private fb: FormBuilder
   ) {
+    this.form = fb.group({
+      lan: new FormControl('')
+    });
+    translate.addLangs([ 'en', 'fr' ]);
+    translate.setDefaultLang('fr');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
   }
 
   ngOnInit() {
@@ -28,7 +41,6 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleSidebar(): boolean {
-    debugger
     this.sidebarService.toggle(true, 'menu-sidebar');
     this.toggleProfile.emit();
     return false;

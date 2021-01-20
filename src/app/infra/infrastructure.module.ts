@@ -1,27 +1,44 @@
-import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import { NbThemeModule } from '@nebular/theme';
-import { CommonModule } from '@angular/common';
-import { ThemeModule } from './theme/theme.module';
-import { ReactiveFormsModule } from '@angular/forms';
-import { ScrollingModule } from '@angular/cdk/scrolling';
+import { NgModule, SkipSelf, Optional, ModuleWithProviders } from '@angular/core';
+import { InfraThemeModule } from './theme/infra-theme.module';
 
 import { MaterialComponentModule } from './material/material.module';
-import { InfraComponentModule } from './app-infra/infra-component.module';
-
+import { InfraComponentModule } from './app-infra/components/infra-component.module';
+import { InfraCommonModule } from './app-infra/common/infra-common.module';
+import { InfraLayoutModule } from './app-infra/layout/infra-layout.module';
+export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
+  if (parentModule) {
+    throw new Error(`${moduleName} has already been loaded. Import Core modules in the AppModule only.`);
+  }
+}
+export const RAYAN_CORE_PROVIDERS = [
+];
 @NgModule({
   imports: [
-    NbThemeModule.forRoot()
+    InfraCommonModule,
+    InfraComponentModule,
+    InfraLayoutModule,
+    MaterialComponentModule,
+    InfraThemeModule,
   ],
   exports: [
-    ScrollingModule,
-    ReactiveFormsModule,
-    CommonModule,
-    RouterModule,
+    InfraCommonModule,
     InfraComponentModule,
+    InfraLayoutModule,
     MaterialComponentModule,
-    ThemeModule,
+    InfraThemeModule,
   ]
 })
 export class InfrastructureModule {
+  constructor(@Optional() @SkipSelf() parentModule: InfrastructureModule) {
+    throwIfAlreadyLoaded(parentModule, 'InfrastructureModule');
+  }
+
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: InfrastructureModule,
+      providers: [
+        ...RAYAN_CORE_PROVIDERS
+      ]
+    } as ModuleWithProviders;
+  }
 }

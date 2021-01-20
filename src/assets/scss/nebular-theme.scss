@@ -45,7 +45,9 @@ nb-context-menu .context-menu {
   }
 
 }
-
+.layout-container nb-sidebar.left {
+  order: 0 !important;
+}
 .menu-sidebar {
   background-color: $gray !important;
 }

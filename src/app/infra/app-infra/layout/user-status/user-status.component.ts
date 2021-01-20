@@ -35,7 +35,7 @@ export class UserStatusComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-
+    this.userImg = 'assets/img/profile.svg';
   }
 
   onChangePassClick() {

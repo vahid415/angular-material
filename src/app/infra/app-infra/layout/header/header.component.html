@@ -1,14 +1,22 @@
-<div class="mcb-brand">
+<div class="app-brand">
   <div style="float: right; width: 45%;">
     <img style="width: 32px;cursor: pointer;" src="assets/img/menu.svg" alt="menu" (click)="toggleSidebar()" />
-    <img style="width: 70px; cursor: pointer;" src="assets/img/maskan.png" alt="pic"
-         (click)="goToHome()" />
   </div>
   <div class="text-center mt-2" style="float: left; width: 55%;">
     <h6>{{'app'}}</h6>
-    <p style="margin-bottom: 0;">{{'test'}}</p>
+    <p style="margin-bottom: 0;">{{'app.title'| translate }}</p>
   </div>
 </div>
 <div class="mcb-page-header {{showSidebarClass}}">
-  <app-user-status></app-user-status>
+  <div style="display: inline-block; float: right;position: absolute;">
+    <label>
+      <select #langSelect (change)="translate.use(langSelect.value)">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{
+          lang }}</option>
+      </select>
+    </label>
+  </div>
+  <div class="m-1" style="left: 0;position: absolute;">
+    <app-user-status></app-user-status>
+  </div>
 </div>

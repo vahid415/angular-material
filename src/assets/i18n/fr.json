@@ -1,0 +1,376 @@
+{
+  "app": {
+    "title": "زبان فارسی"
+  },
+  "messaging": {
+    "private": "پیام های شخصی",
+    "public": "پیام های عمومی"
+  },
+  "validation": {
+    "ip": {
+      "format": "فرمت IP صحیح نمی باشد.",
+      "empty": "Ip خالی نمیتواند ارسال شود"
+    },
+    "authority": {
+      "only_english": "مجوز می بایست شامل حروف انگلیسی و اعداد انگلیسی باشد",
+      "required": "مجوز الزامی است."
+    },
+    "application": {
+      "required": "انتخاب سامانه الزامی است."
+    },
+    "category": {
+      "required": "انتخاب دسته بندی الزامی است."
+    },
+    "role_type": {
+      "required": "انتخاب نوع نقش الزامی است."
+    },
+    "is_admin": {
+      "required": "انتخاب مدیر بودن الزامی است."
+    },
+    "farsi_title": {
+      "only_farsi": "عنوان فارسی می بایست شامل حروف فارسی باشد.",
+      "required": "عنوان فارسی الزامی است."
+    },
+    "english_title": {
+      "only_english": "عنوان انگلیسی می بایست شامل حروف انگلیسی باشد.",
+      "required": "عنوان انگلیسی الزامی است."
+    },
+    "client_id": {
+      "only_english": "شناسه مشتری می بایست شامل حروف انگلیسی و اعداد انگلیسی باشد",
+      "required": "شناسه مشتری الزامی است."
+    },
+    "version_number": {
+      "only_english": "ورژن می بایست شامل اعداد انگلیسی باشد",
+      "required": "ورژن الزامی است."
+    },
+    "auto_approve": {
+      "required": "تائید خودکار الزامی است."
+    },
+    "classification_level": {
+      "required": "سطح دسترسی الزامی است."
+    },
+    "secret": {
+      "only_english": "کلید امنیتی می بایست شامل حروف انگلیسی و اعداد انگلیسی باشد",
+      "required": "کلید امنیتی الزامی است."
+    },
+    "authorized_grant_types": {
+      "only_english": "نوع تائید مجوز می بایست شامل حروف انگلیسی و اعداد انگلیسی باشد",
+      "required": "نوع تائید مجوز الزامی است."
+    },
+    "scope": {
+      "only_english": "محدوده می بایست شامل حروف انگلیسی و اعداد انگلیسی باشد",
+      "required": "محدوده الزامی است."
+    },
+    "access_token_validity": {
+      "only_number": "اعتبار توکن دسترسی می بایست شامل اعداد باشد",
+      "required": "اعتبار توکن دسترسی الزامی است."
+    },
+    "refresh_token_validity": {
+      "only_number": "اعتبار توکن بروزرسانی می بایست شامل اعداد باشد",
+      "required": "اعتبار توکن بروزرسانی الزامی است."
+    },
+    "redirect_URIs": {
+      "url_pattern": "الگو URL می بایست رعایت شود.",
+      "only_english": "آدرس بازگشت نمیتواند شامل حروف فارسی و فاصله باشد"
+    },
+    "status": {
+      "required": "وضعیت الزامی است."
+    },
+    "menu_key": {
+      "only_english": "کلید منو می بایست شامل حروف انگلیسی و اعداد انگلیسی باشد",
+      "required": "کلید منو الزامی است."
+    },
+    "font_icon": {
+      "only_english": "فونت آیکون می بایست شامل حروف انگلیسی و  فاصله باشد",
+      "required": "فونت آیکون الزامی است."
+    },
+    "function": {
+      "only_english": "تابع نمیتواند شامل حروف فارسی باشد"
+    },
+    "badgeTitle": {
+      "only_english": "تابع نمیتواند شامل حروف فارسی باشد"
+    },
+    "user_id": {
+      "required": "شناسه کاربر الزامی است.",
+      "only_number": "شناسه کاربر می بایست فقط شامل اعداد باشد."
+    },
+    "user_name": {
+      "only_english": "نام کاربری می بایست شامل حروف و اعداد انگلیسی باشد.",
+      "check_user_name": "نام کاربری قبلا انتخاب شده است.",
+      "required": "نام کاربری الزامی است."
+    },
+    "national_cod": {
+      "only_english": " کدملی می بایست فقط شامل اعداد باشد.",
+      "success": " کدملی معتبر نمی باشد.",
+      "check_national_cod": " کدملی قبلا انتخاب شده است.",
+      "required": "کدملی الزامی است."
+    },
+    "mobile_number": {
+      "format": "فرمت شماره موبایل صحیح نمی باشد.",
+      "check_mobile_number": "شماره موبایل قبلا انتخاب شده است.",
+      "max_length": "شماره موبایل نمی تواند بیشتر از 11 رقم باشد.",
+      "required": "وارد کردن شماره همراه الزامی است."
+    },
+    "email": {
+      "format": "فرمت پست الکترونیکی صحیح نمی باشد.",
+      "check_email": "پست الکترونیکی قبلا انتخاب شده است."
+    },
+    "menu": {
+      "check_menu_key": "کلید منو قبلا انتخاب شده است."
+    },
+    "first_name": {
+      "only_farsi": "نام می بایست صرفا شامل حروف فارسی باشد.",
+      "required": "وارد کردن نام الزامی است."
+    },
+    "last_name": {
+      "only_farsi": "نام خانوادگی می بایست صرفا شامل حروف فارسی باشد.",
+      "required": "وارد کردن نام خانوادگی الزامی است."
+    },
+    "father_name": {
+      "only_farsi": "نام پدر می بایست صرفا شامل حروف فارسی باشد.",
+      "required": "وارد کردن نام پدر الزامی است."
+    },
+    "birth_date": {
+      "less_than": "تاریخ تولد می بایست از تاریخ جاری سیستم کوچکتر باشد."
+    },
+    "gender": {
+      "required": "جنسیت الزامی است."
+    },
+    "password": {
+      "required": "وارد کردن کلمه عبور الزامی است.",
+      "password_min_length": "کلمه عبور می بایست حداقل دارای {{itemName}} کاراکتر باشد",
+      "only_english": "کلمه عبور می بایست شامل حروف و اعداد انگلیسی باشد.",
+      "has_lower_case": "کلمه عبور می بایست شامل حداقل یک حرف کوچک باشد",
+      "has_upper_case": "کلمه عبور می بایست شامل حداقل یک حرف بزرگ باشد",
+      "has_character": "کلمه عبور می بایست شامل حداقل یک کاراکتر ویژه (@ # % & * ! . - _) باشد",
+      "has_user_name": "کلمه عبور نمیتواند شامل کاراکترهای نام کاربری باشد",
+      "has_number": "کلمه عبور می بایست شامل حداقل یک عدد باشد"
+    },
+    "confirm_password": {
+      "required": "وارد کردن تکرار کلمه عبور الزامی است.",
+      "match_password": "تکرار کلمه عبور یکسان نمی باشد.",
+      "only_english": "تکرار کلمه عبور می بایست شامل حروف و اعداد انگلیسی باشد."
+    },
+    "service_key": {
+      "required": "وارد کردن کلید سرویس الزامی است.",
+      "check_service_key": " کلید سرویس قبلا انتخاب شده است.",
+      "applicationNotSelected": "ابتدا سامانه را انتخاب کنید",
+      "only_english": "کلید سرویس می بایست شامل حروف و اعداد انگلیسی و کاراکتر باشد."
+    },
+    "action_key": {
+      "required": "وارد کردن کلید عملکرد الزامی است.",
+      "check_action_key": " کلید عملکرد قبلا انتخاب شده است.",
+      "applicationNotSelected": "ابتدا سامانه را انتخاب کنید",
+      "only_english": "کلید عملکرد می بایست شامل حروف و اعداد انگلیسی باشد."
+    },
+    "service_address": {
+      "required": "وارد کردن آدرس وب سرویس الزامی است.",
+      "only_english": "آدرس وب سرویس می بایست شامل حروف و اعداد انگلیسی و کارکترهای<< / {} >>باشد."
+    }
+  },
+  "general": {
+    "empty": "",
+    "title": "عنوان",
+    "time_of": "از ساعت",
+    "time_to": "تا ساعت",
+    "date_of": "از تاریخ",
+    "date_to": "تا تاریخ",
+    "allDay": "تمام روز های هفته",
+    "someDays": "روزهای مشخص",
+    "operations": "عملیات",
+    "reset": "تنظیمات پیشفرض",
+    "search_all_branch": "جستجو کلیه سطوح",
+    "search_current_branch": "جستجو سطح جاری",
+    "add": "افزودن ",
+    "search": "جستجو",
+    "saveUpdate": "ثبت و ذخیره",
+    "save": "ذخیره",
+    "delete": "حذف",
+    "back": "بازگشت",
+    "cancel": "لغو ثبت",
+    "yes": "آری",
+    "no": "خیر",
+    "none": "هیچکدام",
+    "hasItem": "دارد",
+    "hasNotItem": "ندارد",
+    "help": "راهنمای کاربری",
+    "date_placeholder": "تاریخ",
+    "advanced_search": "جستجوی پیشرفته",
+    "entity_update": "ویرایش {{entityTitle}} {{itemName}}",
+    "fill_form": "لطفا ابتدا اطلاعات فرم را بطور کامل وارد نمایید",
+    "delete_confirm_text": "آیا از حذف {{itemName}} اطمینان دارید؟",
+    "delete_confirm_message": "آیا از حذف این نشست اطمینان داری {{item}}",
+    "close_confirm_text": "آیا از خروج اطمینان دارید؟",
+    "delete_IP_confirm_text": "آیا از حذف این IP اطمینان دارید؟",
+    "delete_date_confirm_text": "آیا از حذف این تاریخ اطمینان دارید؟",
+    "save_child_confirm_text": "آیا تمایل به ثبت وابستگی های {{itemName}} دارید؟",
+    "delete_successful_message": "حذف {{itemName}} با موفقیت انجام شد.",
+    "delete_failed_message": "امکان حذف {{itemName}} وجود ندارد.",
+    "save_successful_message": "ثبت {{itemName}} با موفقیت انجام شد.",
+    "update_user_profile_successful_message": "ویرایش پروفایل کاربر با موفقیت انجام شد",
+    "save_password_successful_message": "تغییر کلمه عبور با موفقیت انجام شد",
+    "save_userIp_successful": "IP های مجاز کاربر با موفقیت ثبت شد",
+    "save_userDate_successful": "محدودیت کاربر در بازه های زمانی تعریف شده ثبت شد",
+    "cancel_user_blocking": "تمام مسدود سازی های کاربر با موفقیت لغو شد",
+    "user_blocking_successful": " مسدود سازی های کاربر با موفقیت ثبت شد",
+    "save_failed_message": "امکان ثبت {{itemName}} وجود ندارد.",
+    "update_successful_message": "ویرایش {{itemName}} با موفقیت انجام شد.",
+    "update_setting": "ویرایش تنظیمات با موفقیت انجام شد.",
+    "delete_session": "نشست انتخاب شده با موفقیت حذف شد",
+    "lock_session": "نشست انتخاب شده با موفقیت قفل شد",
+    "unlock_session": "نشست انتخاب شده با موفقیت باز شد",
+    "error_delete_session": "عملیات حذف نشست با خطا مواجه شد",
+    "error_lock_session": "عملیات قفل کردن نشست با خطا مواجه شد",
+    "error_unlock_session": "عملیات باز کردن نشست با خطا مواجه شد",
+    "reset_setting": "بازگشت به تنظیمات اولیه با موفقیت انجام شد",
+    "confirm_reset_setting": "آیا تمایل به بازگشت تنظیمات اولیه دارید",
+    "update_failed_message": "امکان ویرایش {{itemName}} وجود ندارد.",
+    "text_placeholder": "متن",
+    "man": "مرد",
+    "woman": "زن",
+    "edit": "ویرایش",
+    "menu_details": "جزئیات منو",
+    "menu_action": "عملکرد منو",
+    "menu_select": "لطفا یکی از شاخه های منو را انتخاب نمایید.",
+    "system_select": "لطفا ابتدا سامانه مورد نظر را انتخاب نمایید.",
+    "menu_select_parent_action": "ثبت عملکرد برای منو های دارای زیر مجموعه ممکن نمی باشد.",
+    "menu_select_parent_permission": "نمایش دسترسی ها برای منو های دارای زیر مجموعه ممکن نمی باشد.",
+    "menu_select_parent_delete": "ابتدا می بایست زیر منو ها حذف شوند.",
+    "permission": "دسترسی"
+  },
+  "security": {
+    "LOG_OUT": "خروج از سامانه",
+    "LOCK":"قفل صفحه",
+    "LOGIN":"ورود",
+    "ARE_YOU_SURE_WANT_LOG_OUT": "آیا می خواهید از سیستم خارج شوید؟",
+    "YES": "بلی",
+    "NO": "خیر",
+    "BAD_REQUEST_MESSAGE": "اطلاعات به صورت صحیح ارسال نمی شود",
+    "UNAUTHORIZED_MESSAGE": "دسترسی به این سرویس مقدور نیست",
+    "FORBIDDEN_MESSAGE": "مجوز ارسال درخواست از سمت سرور داده نشد",
+    "NOT_FOUND_MESSAGE": "سرویس مورد نظر یافت نشد",
+    "INTERNAL_SERVER_MESSAGE": "خطا از سمت سرور رخ داده است",
+    "METHOD_NOT_ALLOWED_MESSAGE": "پارامتر ارسال شده اشتباه است",
+    "ERROR": "خطا: {{errorDescription}}",
+    "organization_tree_placeholder": "رده انتخابی",
+    "organization_tree_label": "رده سازمانی",
+    "organization_tree_select": "انتخاب رده سازمانی",
+    "no_organizations_found": "سازمانی جهت انتخاب یافت نشد",
+    "active": "فعال",
+    "disActive": "غیر فعال",
+    "suspended": "معلق",
+    "unknown": "نا مشخص",
+    "ACCOUNT_IS_LOCKED_PLEASE_ENTER_PASSWORD":"صفحه کاربری شما قفل شده است، برای ادامه کلمه عبور جاری خود را وارد کنید.",
+    "CURRENT_PASSWORD_IS_REQUIRED":"کلمه عبور جاری را وارد کنید"
+  },
+  "user_management": {
+    "title": "مدیریت کاربران",
+    "users": "کاربران",
+    "user": "کاربر",
+    "add_user": "افزودن کاربر",
+    "add_user_to_role": "افزودن کاربر به نقش",
+    "user_id": "شناسه کاربر",
+    "user_name": "نام کاربری",
+    "mobile_number": "شماره همراه",
+    "email": "پست الکترونیکی",
+    "first_name": "نام",
+    "last_name": "نام خانوادگی",
+    "father_name": "نام پدر",
+    "birth_date": "تاریخ تولد",
+    "status": "وضعیت",
+    "gender": "جنسیت",
+    "user_type": "نوع کاربر",
+    "row": "ردیف",
+    "description": "توضیحات",
+    "password": "کلمه عبور",
+    "current_password": "کلمه عبور جاری",
+    "new_password": "کلمه عبور جدید",
+    "confirm_password": "تکرار کلمه عبور",
+    "confirm_new_password": "تکرار کلمه عبور جدید",
+    "change_password": "ویرایش رمز عبور",
+    "user_session": "نشست های کاربر",
+    "user_block": "مسدود سازی کاربر",
+    "device_type": "نوع دستگاه",
+    "os_name": "سیستم عامل دستگاه",
+    "os_version": "ورژن سیستم عامل",
+    "browser_name": "نوع مرورگر",
+    "browser_version": "ورژن مرورگر",
+    "national_cod": "کد ملی",
+    "detail": "جزییات کاربران",
+    "limited_type": "نوع محدودیت",
+    "user_blocking": "نوع مسدود سازی",
+    "limited": "محدودیت",
+    "user_limitation_as_date": "محدودیت کاربر بر اساس تاریخ های مجاز",
+    "ip": "IP",
+    "user_limitation_as_IP": "محدودیت کاربر براساس IP های مجاز",
+    "Permanent": "دائمی",
+    "unlimited": "بدون محدودیت",
+    "none": "هیچکدام",
+    "Sectional": "مقطعی",
+    "Temporary": "محدودیت موقت"
+  },
+  "role_management": {
+    "title": "مدیریت نقش ها",
+    "role": "نقش",
+    "add_role": "افزودن نقش",
+    "add_role_to_user": "افزودن نقش به کاربر",
+    "farsi_title": "عنوان فارسی",
+    "english_title": "عنوان انگلیسی",
+    "system": "سامانه",
+    "authority": "مجوز",
+    "is_admin": " مدیر می باشد",
+    "status": "وضعیت",
+    "role_type": "نوع نقش",
+    "total_admin": "ادمین کل",
+    "system_admin": "سیستمی",
+    "application": "سامانه",
+    "description": "توضیحات",
+    "assign_rol_to_user": "انتصاب نقش به کاربر",
+    "assign_user_to_rol": "انتصاب کاربر به نقش",
+    "common_user": "کاربر عمومی",
+    "system_user": "کاربر سیستمی",
+    "users_in_role": "کاربران منتصب به نقش",
+    "roles_to_user": "نقش های منتصب به کاربر",
+    "assign_user": "انتصاب کاربر"
+  },
+  "system_management": {
+    "title": "مدیریت سامانه",
+    "add-system": "مدیریت سامانه",
+    "system": "سامانه",
+    "add_system": "افزودن سامانه",
+    "farsi_title": "عنوان فارسی",
+    "english_title": "عنوان انگلیسی",
+    "client_id": "شناسه مشتری",
+    "status": "وضعیت",
+    "logo": "آرم",
+    "authorized_grant_types": "نوع تائید مجوز",
+    "secret": "کلید امنیتی",
+    "scope": "محدوده",
+    "refresh_token_validity": "اعتبار توکن بروز رسانی (ثانیه)",
+    "access_token_validity": "اعتبار توکن دسترسی (ثانیه)",
+    "redirect_URIs": "آدرس بازگشت",
+    "auto_approve": "تائید خودکار",
+    "description": "توضیحات",
+    "classification_level": "سطح دسترسی",
+    "normal": "عادی",
+    "confidential": "محرمانه",
+    "very_confidential": "خیلی محرمانه",
+    "secretive": "سری",
+    "bio": "توضیحات",
+    "very_secretive": "خیلی سری",
+    "detail": "جزییات سامانه",
+    "version_number": "ورژن سامانه",
+    "version_date": "تاریخ آخرین بروز رسانی"
+  },
+
+  "week_days": {
+    "saturday": "شنبه",
+    "sunday": "یک شنبه",
+    "monday": "دوشنبه",
+    "tuesday": "سه شنبه",
+    "wednesday": "چهار شنبه",
+    "thursday": "پنج شنبه",
+    "friday": "جمعه"
+  }
+
+}
