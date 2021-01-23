@@ -3,6 +3,8 @@
 @import 'assets/scss/themes.scss';
 @import 'assets/scss/nebular-theme.scss';
 @import 'assets/scss/layout.css';
+@import "assets/libs/bootstrap/bootstrap.min.css";
+
 
 
 @include nb-install() {

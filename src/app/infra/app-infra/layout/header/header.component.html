@@ -9,12 +9,20 @@
 </div>
 <div class="mcb-page-header {{showSidebarClass}}">
   <div style="display: inline-block; float: right;position: absolute;">
-    <label>
+    <!-- <label>
       <select #langSelect (change)="translate.use(langSelect.value)">
         <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{
           lang }}</option>
       </select>
-    </label>
+    </label> -->
+    <mat-form-field appearance="fill" class="mt-3">
+    <mat-label>{{'انتخاب زبان'}}</mat-label>
+      <mat-select>
+        <mat-option  *ngFor="let lang of translate.getLangs()" [value]="lang" [id]="lang === translate.currentLang"
+                    (onSelectionChange)="setLanguage($event)">{{lang}}</mat-option>
+        <!-- <mat-option value="two">Second option</mat-option> -->
+      </mat-select>
+    </mat-form-field>
   </div>
   <div class="m-1" style="left: 0;position: absolute;">
     <app-user-status></app-user-status>

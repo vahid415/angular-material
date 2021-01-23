@@ -1,4 +1,4 @@
-import { InfrastructureModule } from './../../infra/infrastructure.module';
+import { InfraComponentModule } from './../../infra/app-infra/components/infra-component.module';
 import { TestDatePickerComponent } from './test-date-picker.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -8,7 +8,7 @@ import { InfraCommonModule } from 'src/app/infra/app-infra/common/infra-common.m
 @NgModule({
   declarations: [ TestDatePickerComponent ],
   imports: [ RouterModule.forChild([ { path: '', component: TestDatePickerComponent } ]),
-    MaterialComponentModule, InfraCommonModule ],
+    MaterialComponentModule, InfraCommonModule, InfraComponentModule ],
   exports: []
 })
 export class TestDatePickerModule { }

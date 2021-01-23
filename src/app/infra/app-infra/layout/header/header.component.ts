@@ -4,6 +4,7 @@ import { NbSidebarService } from '@nebular/theme';
 import { LayoutService } from '../../common/services/layout.service';
 import { NavigationService } from '../../common/services/navigation.service';
 import { TranslateService } from '@ngx-translate/core';
+import { MatOptionSelectionChange } from '@angular/material/core';
 
 @Component({
   selector: 'app-header',
@@ -52,5 +53,11 @@ export class HeaderComponent implements OnInit {
 
   onHeaderToggleClick() {
     this.layoutService.openSideBar();
+  }
+  setLanguage(e: MatOptionSelectionChange) {
+    if (e.source.selected) {
+      this.translate.use(e.source.value);
+    }
+
   }
 }

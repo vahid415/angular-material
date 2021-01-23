@@ -10,22 +10,22 @@ export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
     throw new Error(`${moduleName} has already been loaded. Import Core modules in the AppModule only.`);
   }
 }
-export const RAYAN_CORE_PROVIDERS = [
+export const CORE_PROVIDERS = [
 ];
 @NgModule({
   imports: [
-    InfraCommonModule,
-    InfraComponentModule,
-    InfraLayoutModule,
-    MaterialComponentModule,
-    InfraThemeModule,
+    // InfraCommonModule,
+    // InfraComponentModule,
+    // InfraLayoutModule,
+    // MaterialComponentModule,
+    // InfraThemeModule,
   ],
   exports: [
-    InfraCommonModule,
-    InfraComponentModule,
-    InfraLayoutModule,
-    MaterialComponentModule,
-    InfraThemeModule,
+    // InfraCommonModule,
+    // InfraComponentModule,
+    // InfraLayoutModule,
+    // MaterialComponentModule,
+    // InfraThemeModule,
   ]
 })
 export class InfrastructureModule {
@@ -37,7 +37,7 @@ export class InfrastructureModule {
     return {
       ngModule: InfrastructureModule,
       providers: [
-        ...RAYAN_CORE_PROVIDERS
+        ...CORE_PROVIDERS
       ]
     } as ModuleWithProviders;
   }
